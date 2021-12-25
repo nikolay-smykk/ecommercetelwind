@@ -1,11 +1,11 @@
-import React from 'react'
-import "./style.css"
+import React from 'react';
+import { Shared } from '../../shared';
+import './style.css';
 
 export const About = () => {
-	return (
-		<div>
-			About
-		</div>
-		
-	)
-}
+  return (
+    <Shared.Layout>
+      <div>About</div>
+    </Shared.Layout>
+  );
+};

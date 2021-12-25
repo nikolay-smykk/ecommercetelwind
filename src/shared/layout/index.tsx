@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { ReactChild, ReactChildren } from 'react';
+import { Shared } from '..';
 
-export const LayoutPage = () => {
-	return (
-		<div>
-			LayoutPage
-		</div>
-	)
+interface Props {
+  children: ReactChild | ReactChildren;
 }
+
+export const LayoutPage = ({ children }: Props) => {
+  return (
+    <>
+      <Shared.Header />
+      {children}
+      <Shared.Footer />
+    </>
+  );
+};
