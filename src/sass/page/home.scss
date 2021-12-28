@@ -1,0 +1,12 @@
+.home {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home_card_image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}

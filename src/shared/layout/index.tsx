@@ -9,7 +9,8 @@ export const LayoutPage = ({ children }: Props) => {
   return (
     <>
       <Shared.Header />
-      {children}
+      <div className="content">{children}</div>
+
       <Shared.Footer />
     </>
   );

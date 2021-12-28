@@ -1,4 +1,6 @@
+import { Card } from './Card';
+
 export const Components = {
-  Modal: "ModalComponents",
-  MessageError: "MessageError",
+  Card: Card,
+  MessageError: 'MessageError',
 };

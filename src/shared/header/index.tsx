@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export const HeaderPage = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -180 }}
+      initial={{ opacity: 0, y: 180 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
         ease: 'easeInOut',
@@ -22,11 +22,9 @@ export const HeaderPage = () => {
           <Link to="/">MINIMALIZM</Link>
         </div>
         <nav className="nav">
-          <Link to="/">Home</Link>
-
-          <Link to="/about">About</Link>
-
-          <Link to="/contact">Contact</Link>
+          <Link to="/">Главная</Link>
+          <Link to="/about">О нас</Link>
+          <Link to="/contact">Контакты</Link>
         </nav>
         <div className="cart">
           <Link to="/cart">
