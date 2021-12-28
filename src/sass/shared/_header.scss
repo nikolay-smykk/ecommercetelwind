@@ -1,0 +1,40 @@
+.header-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex: wrap;
+  a {
+    color: $black;
+  }
+}
+
+.logo {
+  color: $black;
+  font-size: 3rem;
+  :visited {
+    color: $black;
+  }
+  :hover {
+    color: $black;
+  }
+}
+
+.strange {
+  background-color: $black;
+  color: $background;
+  min-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_icon {
+  color: $black;
+  font-size: 3rem;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -15,31 +16,22 @@ export const HeaderPage = () => {
       }}
       className="header"
     >
+      <div className="strange"> MINIMALIZM STUDIO</div>
       <div className="header-inner">
-        <div className="logo">Minimalism</div>
-        <nav className="nav">
-          <li>
-            <Link to="/design">Design</Link>
-          </li>
-          <li>
-            <Link to="/strategy">Strategy</Link>
-          </li>
-          <li>
-            <Link to="/cases">Cases</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/why">Why work with us?</Link>
-          </li>
-        </nav>
-        <div className="contact">
-          <Link to="/contact">Let's work together</Link>
+        <div className="logo">
+          <Link to="/">MINIMALIZM</Link>
         </div>
-        <div className="hamburger-menu">
-          <span></span>
-          <span></span>
+        <nav className="nav">
+          <Link to="/">Home</Link>
+
+          <Link to="/about">About</Link>
+
+          <Link to="/contact">Contact</Link>
+        </nav>
+        <div className="cart">
+          <Link to="/cart">
+            <FaShoppingCart className="cart_icon" />
+          </Link>
         </div>
       </div>
     </motion.div>
