@@ -16,7 +16,9 @@ export const HeaderPage = () => {
       }}
       className="header"
     >
-      <div className="header__strange"> MINIMALIZM STUDIO</div>
+      <div className="header__strange">
+        <span> MINIMALIZM STUDIO</span>
+      </div>
       <div className="header__inner">
         <div className="header__inner__logo">
           <Link to="/">MINIMALIZM</Link>

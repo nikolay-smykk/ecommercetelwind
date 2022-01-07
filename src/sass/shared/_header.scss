@@ -1,15 +1,21 @@
 .header {
+  :hover {
+    color: $background;
+  }
   &__strange {
     background-color: $black;
-    color: $background;
+    color: $black;
     min-height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    span {
+      font-size: 2rem;
+    }
   }
   &__inner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 2rem;
 
@@ -25,7 +31,7 @@
     }
     &__nav {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       gap: 2rem;
       flex: wrap;
