@@ -1,40 +1,50 @@
-.header-inner {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem;
-}
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-  flex: wrap;
-  a {
-    color: $black;
+.header {
+  &__strange {
+    background-color: $black;
+    color: $background;
+    min-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
 
-.logo {
-  color: $black;
-  font-size: 3rem;
-  :visited {
-    color: $black;
-  }
-  :hover {
-    color: $black;
-  }
-}
+    &__logo {
+      color: $black;
+      font-size: 3rem;
+      :visited {
+        color: $black;
+      }
+      :hover {
+        color: $second;
+      }
+    }
+    &__nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      flex: wrap;
+      a {
+        color: $black;
+      }
+      :hover {
+        color: $second;
+      }
+    }
 
-.strange {
-  background-color: $black;
-  color: $background;
-  min-height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cart_icon {
-  color: $black;
-  font-size: 3rem;
+    &__cart {
+      :hover {
+        color: $second;
+      }
+      &__icon {
+        color: $black;
+        font-size: 3rem;
+      }
+    }
+  }
 }

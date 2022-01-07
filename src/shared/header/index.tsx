@@ -16,19 +16,19 @@ export const HeaderPage = () => {
       }}
       className="header"
     >
-      <div className="strange"> MINIMALIZM STUDIO</div>
-      <div className="header-inner">
-        <div className="logo">
+      <div className="header__strange"> MINIMALIZM STUDIO</div>
+      <div className="header__inner">
+        <div className="header__inner__logo">
           <Link to="/">MINIMALIZM</Link>
         </div>
-        <nav className="nav">
+        <nav className="header__inner__nav">
           <Link to="/">Главная</Link>
           <Link to="/about">О нас</Link>
           <Link to="/contact">Контакты</Link>
         </nav>
-        <div className="cart">
+        <div className="header__inner__cart">
           <Link to="/cart">
-            <FaShoppingCart className="cart_icon" />
+            <FaShoppingCart className="header__inner__cart__icon" />
           </Link>
         </div>
       </div>
