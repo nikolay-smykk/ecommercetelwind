@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export const HeaderPage = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 180 }}
+      initial={{ opacity: 0, y: -180 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
         ease: 'easeInOut',
