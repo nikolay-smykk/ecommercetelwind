@@ -4,6 +4,16 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+function InnerCart() {
+  return (
+    <div className="header__inner__cart">
+      <Link to="/cart">
+        <FaShoppingCart className="header__inner__cart__icon" />
+      </Link>
+    </div>
+  );
+}
+
 export const HeaderPage = () => {
   return (
     <motion.div
@@ -28,11 +38,7 @@ export const HeaderPage = () => {
           <Link to="/about">О нас</Link>
           <Link to="/contact">Контакты</Link>
         </nav>
-        <div className="header__inner__cart">
-          <Link to="/cart">
-            <FaShoppingCart className="header__inner__cart__icon" />
-          </Link>
-        </div>
+        <InnerCart />
       </div>
     </motion.div>
   );
